@@ -1,0 +1,6 @@
+framework module Pods_KituraRegistrationClient {
+  umbrella header "Pods-KituraRegistrationClient-umbrella.h"
+
+  export *
+  module * { export * }
+}
