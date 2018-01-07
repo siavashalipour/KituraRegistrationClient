@@ -11,6 +11,12 @@ import RxCocoa
 
 typealias JSONDictionary = [String: Any]
 
+struct AccountObjectKey {
+    
+    static let email: String = "email"
+    static let pwd: String = "password"
+}
+
 enum AuthenticationStatus {
     case none
     case error(AuthenticationError)
@@ -58,7 +64,7 @@ class AccountService {
 //    }
     
     func register(with email: String, password: String) -> Observable<AuthenticationStatus> {
-        let params: [String: Any] = ["AppleDeviceId":"", "Email":email,"Password":password,"AndroidUniqueId":""]
+        let params: [String: Any] = [AccountObjectKey.email: email,AccountObjectKey.pwd :password]
         let url = URL.init(string: "[]")
         
         var request = URLRequest.init(url: url!)
@@ -71,7 +77,7 @@ class AccountService {
         
         return session.rx.json(request: request)
             .map {
-                guard let json = $0 as? JSONDictionary else {
+                guard let _ = $0 as? JSONDictionary else {
                     return .error(.badReponse)
                 }
                 let ac = AccountModel.init(email: email)

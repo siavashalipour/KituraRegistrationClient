@@ -7,38 +7,37 @@
 //
 
 import Foundation
+import RxSwift
+import RxCocoa
+import SwiftyJSON
 
 class AccountApi {
-//    struct Account {
-//        let name: String
-//        let address: String
-//        let phone: String
-//        
-//        static let empty = Account(name: "", address: "", phone: "")
-//    }
-//    static var shared: AccountApi {
-//        return AccountApi()
-//    }
-//    func doLoginWith(username: String, password: String) -> Observable<Account> {
-//        return buildLoginRequestWith(username: username, password: password).map({ json in
-//            return Account(name: json[""].string ?? "",
-//                           address: json[""].string ?? "",
-//                           phone: json[""].string ?? "")
-//        })
-//    }
-//    
-//    private func buildLoginRequestWith(username: String, password: String) -> Observable<JSON> {
-//        let params: [String: Any] = ["AppleDeviceId":"", "Email":username,"Password":password,"AndroidUniqueId":""]
-//        let url = URL.init(string: "https://connectdev1.mobileden.com.au/api/prod/e72f1bbf-27f5-440a-a9da-de763d9aaa08/1/7wp28dKFv5APhzDoraUZKve8VSY6Z50H/Authentication/Login?returnUserDetails=true&?expiry=false")
-//        
-//        var request = URLRequest.init(url: url!)
-//        request.setValue("application/json", forHTTPHeaderField: "Content-Type")
-//        let jsonData = try! JSONSerialization.data(withJSONObject: params, options: .prettyPrinted)
-//        request.httpBody = jsonData
-//        request.httpMethod = "GET"
-//        
-//        let session = URLSession.shared
-//        
-//        return session.rx.data(request: request).map { JSON(data: $0) }
-//    }
+    
+    struct Account {
+        let email: String
+        static let empty = Account(email: "")
+    }
+    
+    static var shared: AccountApi = AccountApi()
+    
+    func doRegister(email: String, password: String) -> Observable<Account> {
+        return buildRegisterRequestWith(email: email, password: password).map({ json in
+            return Account(email: json[AccountObjectKey.email].string ?? "")
+        })
+    }
+    
+    private func buildRegisterRequestWith(email: String, password: String) -> Observable<JSON> {
+        let params: [String: Any] = [AccountObjectKey.email: email, AccountObjectKey.pwd: password]
+        let url = URL.init(string: "http://localhost:8080/register")
+        
+        var request = URLRequest.init(url: url!)
+        request.setValue("application/json", forHTTPHeaderField: "Content-Type")
+        
+        let jsonData = try! JSONSerialization.data(withJSONObject: params, options: .prettyPrinted)
+        request.httpBody = jsonData
+        request.httpMethod = "POST"
+        
+        let session = URLSession.shared
+        return session.rx.data(request: request).map { try JSON(data: $0) }
+    }
 }
