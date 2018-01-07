@@ -31,6 +31,27 @@ class RegistrationViewController: UIViewController {
                 self.registerBtn.isEnabled = valid
             })
             .disposed(by: bag)
+        
+        registerBtn.rx.tap
+            .withLatestFrom(vm.credintialValid)
+            .filter{ $0 }
+            .flatMapLatest { [unowned self] valid -> Observable<AuthenticationStatus> in
+                vm.register(with: self.emailField.text!, password: self.pwdField.text!)
+                    .observeOn(SerialDispatchQueueScheduler(qos: .userInteractive))
+            }
+            .observeOn(MainScheduler.instance)
+            .subscribe(onNext: { autenticationStatus in
+                switch autenticationStatus {
+                case .none:
+                    break
+                case .authorise(let ac):
+                    print("\(ac.email)")
+                    break
+                case .error(let error):
+                    print(error)
+                }
+            })
+            .disposed(by: bag)
     }
 
     override func didReceiveMemoryWarning() {

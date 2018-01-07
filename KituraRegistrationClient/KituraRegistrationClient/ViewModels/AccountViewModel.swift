@@ -11,8 +11,6 @@ import RxCocoa
 
 struct AccountViewModel {
 
-//    let activity = ActivityIndicator()
-
     var account: Driver<AccountModel>?
     let credintialValid: Driver<Bool>
 
@@ -31,7 +29,7 @@ struct AccountViewModel {
         credintialValid = Driver.combineLatest(emailValid, passwordValid) { $0 && $1 }
     }
 
-    func login(with email: String, password: String) -> Observable<AuthenticationStatus> {
+    func register(with email: String, password: String) -> Observable<AuthenticationStatus> {
         return AccountService.shared.register(with: email,password: password)
     }
     
