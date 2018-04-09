@@ -38,6 +38,7 @@ class RegistrationViewController: UIViewController {
             .flatMapLatest { [unowned self] valid -> Observable<AuthenticationStatus> in
                 vm.register(with: self.emailField.text!, password: self.pwdField.text!)
                     .observeOn(SerialDispatchQueueScheduler(qos: .userInteractive))
+//                return Observable<AuthenticationStatus>.just(AuthenticationStatus.none)
             }
             .observeOn(MainScheduler.instance)
             .subscribe(onNext: { autenticationStatus in
