@@ -9,6 +9,8 @@
 import RxSwift
 import RxCocoa
 
+typealias Codable = Decodable & Encodable
+
 struct AccountViewModel {
 
     var account: Driver<AccountModel>?
@@ -35,7 +37,8 @@ struct AccountViewModel {
     
 }
 
-struct AccountModel {
+struct AccountModel: Codable {
     
     let email: String
+    let password: String
 }

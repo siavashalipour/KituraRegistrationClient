@@ -35,23 +35,28 @@ class AccountService {
     
     func register(with email: String, password: String) -> Observable<AuthenticationStatus> {
         let params = [AccountObjectKey.email: email,AccountObjectKey.pwd :password]
-        let url = URL.init(string: "http://localhost:8080/register")
+        guard let url = URL.init(string: "http://localhost:8080/register") else { return Observable<AuthenticationStatus>.just(.none) }
         
-        var request = URLRequest.init(url: url!)
+        var request = URLRequest.init(url: url)
         request.setValue("application/json", forHTTPHeaderField: "Content-Type")
         let jsonData = try! JSONSerialization.data(withJSONObject: params, options: .prettyPrinted)
         request.httpBody = jsonData
         request.httpMethod = "POST"
         
         let session = URLSession.shared
-        
-        return session.rx.json(request: request)
-            .map {
-                guard let _ = $0 as? JSONDictionary else {
-                    return .error(.badReponse)
+        return Observable.create({ observer in
+            session.dataTask(with: request) { (data, response, error) in
+                if let data = data {
+                    do {
+                        let user = try JSONDecoder.init().decode(AccountModel.self, from: data)
+                        observer.onNext(AuthenticationStatus.authorise(user))
+                    } catch let e {
+                        observer.onError(e)
+                    }
                 }
-                let ac = AccountModel.init(email: email)
-                return .authorise(ac)
-        }
+                }.resume()
+
+            return Disposables.create()
+        })
     }
 }
