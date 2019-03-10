@@ -1,25 +1,45 @@
 PODS:
+  - Action (3.10.2):
+    - RxCocoa (~> 4.0)
+    - RxSwift (~> 4.0)
   - RxCocoa (4.1.0):
     - RxSwift (~> 4.0)
+  - RxGesture (1.2.1):
+    - RxCocoa (~> 4.0)
+    - RxSwift (~> 4.0)
   - RxSwift (4.1.0)
+  - SnapKit (4.2.0)
   - SwiftyJSON (4.0.0)
+  - Then (2.4.0)
 
 DEPENDENCIES:
+  - Action
   - RxCocoa
+  - RxGesture
   - RxSwift (~> 4.1.0)
+  - SnapKit
   - SwiftyJSON
+  - Then
 
 SPEC REPOS:
-  https://github.com/CocoaPods/Specs.git:
+  https://github.com/cocoapods/specs.git:
+    - Action
     - RxCocoa
+    - RxGesture
     - RxSwift
+    - SnapKit
     - SwiftyJSON
+    - Then
 
 SPEC CHECKSUMS:
+  Action: 01521505cc86ccabbb90fc955296e1f74039968e
   RxCocoa: cc1fec49cdc8fabe645964de7c51c099a36c2aa8
+  RxGesture: c278eb05b187abd47e11e65464ae4de53ab71d95
   RxSwift: 4219941c1244c88002901bd87a69d3aea9ae71f0
+  SnapKit: fe8a619752f3f27075cc9a90244d75c6c3f27e2a
   SwiftyJSON: 070dabdcb1beb81b247c65ffa3a79dbbfb3b48aa
+  Then: 71866660c7af35a7343831f7668e7cd2b62ee0f2
 
-PODFILE CHECKSUM: 0dbac75e031e0814875011e32ebda26fac414b73
+PODFILE CHECKSUM: f831ca329c9e8b7edf4ef1fae6ea7a8d50b482c7
 
-COCOAPODS: 1.5.0
+COCOAPODS: 1.6.0.beta.1

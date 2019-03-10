@@ -8,16 +8,27 @@
 
 /* Begin PBXBuildFile section */
 		6299EED0A72743AB9896C019 /* Pods_KituraRegistrationClient.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AD0FF9D6D8B09B2F0FC9B243 /* Pods_KituraRegistrationClient.framework */; };
+		7C07B5072230CC9D00594F72 /* Validator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C07B5062230CC9D00594F72 /* Validator.swift */; };
 		7C2322E61FFEEC9500382A90 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C2322E51FFEEC9500382A90 /* AppDelegate.swift */; };
 		7C2322E81FFEEC9500382A90 /* RegistrationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C2322E71FFEEC9500382A90 /* RegistrationViewController.swift */; };
 		7C2322EB1FFEEC9500382A90 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7C2322E91FFEEC9500382A90 /* Main.storyboard */; };
 		7C2322ED1FFEEC9500382A90 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7C2322EC1FFEEC9500382A90 /* Assets.xcassets */; };
 		7C2322F01FFEEC9500382A90 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7C2322EE1FFEEC9500382A90 /* LaunchScreen.storyboard */; };
-		7C2322FA1FFEFCDB00382A90 /* AccountViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C2322F91FFEFCDB00382A90 /* AccountViewModel.swift */; };
+		7C2322FA1FFEFCDB00382A90 /* RegistrationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C2322F91FFEFCDB00382A90 /* RegistrationViewModel.swift */; };
 		7C2322FC1FFEFD9F00382A90 /* AccountService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C2322FB1FFEFD9F00382A90 /* AccountService.swift */; };
+		7C56B5842231E34D00038399 /* AccountModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C56B5832231E34D00038399 /* AccountModel.swift */; };
+		7C56B586223206DE00038399 /* UITableView+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C56B585223206DE00038399 /* UITableView+.swift */; };
+		7C56B588223206FF00038399 /* ThingsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C56B587223206FF00038399 /* ThingsCell.swift */; };
+		7C56B58A223217EA00038399 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C56B589223217EA00038399 /* Constants.swift */; };
+		7CC756CA2230CFEB00E7DA79 /* LoggedInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CC756C92230CFEB00E7DA79 /* LoggedInViewController.swift */; };
+		7CC756CC2230D30300E7DA79 /* UIImage+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CC756CB2230D30200E7DA79 /* UIImage+.swift */; };
+		7CC756CE2230D80B00E7DA79 /* Navigator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CC756CD2230D80B00E7DA79 /* Navigator.swift */; };
+		7CC756D02230D86F00E7DA79 /* Storyboard+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CC756CF2230D86F00E7DA79 /* Storyboard+.swift */; };
+		7CC756D22230DCE900E7DA79 /* LoggedInViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CC756D12230DCE900E7DA79 /* LoggedInViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		7C07B5062230CC9D00594F72 /* Validator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Validator.swift; sourceTree = "<group>"; };
 		7C2322E21FFEEC9500382A90 /* KituraRegistrationClient.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KituraRegistrationClient.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7C2322E51FFEEC9500382A90 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7C2322E71FFEEC9500382A90 /* RegistrationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationViewController.swift; sourceTree = "<group>"; };
@@ -25,8 +36,17 @@
 		7C2322EC1FFEEC9500382A90 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7C2322EF1FFEEC9500382A90 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7C2322F11FFEEC9500382A90 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		7C2322F91FFEFCDB00382A90 /* AccountViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountViewModel.swift; sourceTree = "<group>"; };
+		7C2322F91FFEFCDB00382A90 /* RegistrationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationViewModel.swift; sourceTree = "<group>"; };
 		7C2322FB1FFEFD9F00382A90 /* AccountService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountService.swift; sourceTree = "<group>"; };
+		7C56B5832231E34D00038399 /* AccountModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AccountModel.swift; path = KituraRegistrationClient/AccountModel.swift; sourceTree = SOURCE_ROOT; };
+		7C56B585223206DE00038399 /* UITableView+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableView+.swift"; sourceTree = "<group>"; };
+		7C56B587223206FF00038399 /* ThingsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThingsCell.swift; sourceTree = "<group>"; };
+		7C56B589223217EA00038399 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		7CC756C92230CFEB00E7DA79 /* LoggedInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoggedInViewController.swift; sourceTree = "<group>"; };
+		7CC756CB2230D30200E7DA79 /* UIImage+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+.swift"; sourceTree = "<group>"; };
+		7CC756CD2230D80B00E7DA79 /* Navigator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Navigator.swift; sourceTree = "<group>"; };
+		7CC756CF2230D86F00E7DA79 /* Storyboard+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Storyboard+.swift"; sourceTree = "<group>"; };
+		7CC756D12230DCE900E7DA79 /* LoggedInViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoggedInViewModel.swift; sourceTree = "<group>"; };
 		AD0FF9D6D8B09B2F0FC9B243 /* Pods_KituraRegistrationClient.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_KituraRegistrationClient.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BBD757571BD6F662DB1A1AB7 /* Pods-KituraRegistrationClient.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KituraRegistrationClient.release.xcconfig"; path = "Pods/Target Support Files/Pods-KituraRegistrationClient/Pods-KituraRegistrationClient.release.xcconfig"; sourceTree = "<group>"; };
 		DBEA47864D1075DC2333BE7D /* Pods-KituraRegistrationClient.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KituraRegistrationClient.debug.xcconfig"; path = "Pods/Target Support Files/Pods-KituraRegistrationClient/Pods-KituraRegistrationClient.debug.xcconfig"; sourceTree = "<group>"; };
@@ -75,6 +95,13 @@
 			isa = PBXGroup;
 			children = (
 				7C2322E51FFEEC9500382A90 /* AppDelegate.swift */,
+				7C07B5062230CC9D00594F72 /* Validator.swift */,
+				7CC756CB2230D30200E7DA79 /* UIImage+.swift */,
+				7C56B585223206DE00038399 /* UITableView+.swift */,
+				7CC756CF2230D86F00E7DA79 /* Storyboard+.swift */,
+				7C56B5832231E34D00038399 /* AccountModel.swift */,
+				7C56B589223217EA00038399 /* Constants.swift */,
+				7CC756C82230CFD200E7DA79 /* Scene */,
 				7C2322FD1FFEFDA600382A90 /* ViewControllers */,
 				7C2322FE1FFEFDB100382A90 /* ViewModels */,
 				7C2322FF1FFEFDC000382A90 /* Services */,
@@ -90,6 +117,8 @@
 			isa = PBXGroup;
 			children = (
 				7C2322E71FFEEC9500382A90 /* RegistrationViewController.swift */,
+				7CC756C92230CFEB00E7DA79 /* LoggedInViewController.swift */,
+				7C56B587223206FF00038399 /* ThingsCell.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -97,7 +126,8 @@
 		7C2322FE1FFEFDB100382A90 /* ViewModels */ = {
 			isa = PBXGroup;
 			children = (
-				7C2322F91FFEFCDB00382A90 /* AccountViewModel.swift */,
+				7C2322F91FFEFCDB00382A90 /* RegistrationViewModel.swift */,
+				7CC756D12230DCE900E7DA79 /* LoggedInViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -108,6 +138,14 @@
 				7C2322FB1FFEFD9F00382A90 /* AccountService.swift */,
 			);
 			path = Services;
+			sourceTree = "<group>";
+		};
+		7CC756C82230CFD200E7DA79 /* Scene */ = {
+			isa = PBXGroup;
+			children = (
+				7CC756CD2230D80B00E7DA79 /* Navigator.swift */,
+			);
+			path = Scene;
 			sourceTree = "<group>";
 		};
 		C0D414DE9C2AB2FAC5B56D81 /* Frameworks */ = {
@@ -212,20 +250,28 @@
 			files = (
 			);
 			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-KituraRegistrationClient/Pods-KituraRegistrationClient-frameworks.sh",
+				"${PODS_ROOT}/Target Support Files/Pods-KituraRegistrationClient/Pods-KituraRegistrationClient-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Action/Action.framework",
 				"${BUILT_PRODUCTS_DIR}/RxCocoa/RxCocoa.framework",
+				"${BUILT_PRODUCTS_DIR}/RxGesture/RxGesture.framework",
 				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/SnapKit/SnapKit.framework",
 				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
+				"${BUILT_PRODUCTS_DIR}/Then/Then.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Action.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxCocoa.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxGesture.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SnapKit.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Then.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-KituraRegistrationClient/Pods-KituraRegistrationClient-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-KituraRegistrationClient/Pods-KituraRegistrationClient-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -235,9 +281,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7C56B588223206FF00038399 /* ThingsCell.swift in Sources */,
+				7CC756CA2230CFEB00E7DA79 /* LoggedInViewController.swift in Sources */,
 				7C2322E81FFEEC9500382A90 /* RegistrationViewController.swift in Sources */,
+				7CC756CE2230D80B00E7DA79 /* Navigator.swift in Sources */,
+				7CC756D22230DCE900E7DA79 /* LoggedInViewModel.swift in Sources */,
 				7C2322FC1FFEFD9F00382A90 /* AccountService.swift in Sources */,
-				7C2322FA1FFEFCDB00382A90 /* AccountViewModel.swift in Sources */,
+				7CC756D02230D86F00E7DA79 /* Storyboard+.swift in Sources */,
+				7C07B5072230CC9D00594F72 /* Validator.swift in Sources */,
+				7CC756CC2230D30300E7DA79 /* UIImage+.swift in Sources */,
+				7C56B5842231E34D00038399 /* AccountModel.swift in Sources */,
+				7C56B586223206DE00038399 /* UITableView+.swift in Sources */,
+				7C56B58A223217EA00038399 /* Constants.swift in Sources */,
+				7C2322FA1FFEFCDB00382A90 /* RegistrationViewModel.swift in Sources */,
 				7C2322E61FFEEC9500382A90 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
