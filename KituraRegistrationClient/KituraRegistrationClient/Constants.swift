@@ -10,5 +10,6 @@ import UIKit
 
 struct Constants {
   static let btnHeight: CGFloat = 50
+  static let txtFieldHeight: CGFloat = 40
   static let margin: CGFloat = 16
 }

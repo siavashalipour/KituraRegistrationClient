@@ -17,6 +17,7 @@ class Navigator {
   enum Segue {
     case createAccount
     case loggedIn(LoggedInViewModel)
+    case signin
   }
   
   // MARK: - invoke a single segue
@@ -26,6 +27,8 @@ class Navigator {
       show(target: RegistrationViewController.createWith(navigator: self, storyboard: sender.storyboard ?? defaultStoryboard), sender: sender)
     case .loggedIn(let user):
       show(target: LoggedInViewController.createWith(navigator: self, storyboard: sender.storyboard ?? defaultStoryboard, viewModel: user), sender: sender)
+    case .signin:
+      show(target: SigninViewController.createWith(navigator: self), sender: sender)
     }
     
   }

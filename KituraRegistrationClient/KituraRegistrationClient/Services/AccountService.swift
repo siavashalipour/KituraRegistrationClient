@@ -68,6 +68,22 @@ class AccountService {
       }
     }
   }
+  func login(email: String, password: String) -> Observable<AuthenticationStatus> {
+    let account = Account.init(email: email, password: password, things: [])
+    let encoder = JSONEncoder()
+    guard let data = try? encoder.encode(account) else { return Observable.just(AuthenticationStatus.error(AuthenticationError.server)) }
+    return buildRequest(path: "login", jsonData: data).map() { data in
+      let decoder = JSONDecoder()
+      do {
+        let accountObj: Account = try decoder.decode(Account.self, from: data)
+        return AuthenticationStatus.authorise(accountObj)
+      }
+      catch let error {
+        print("!!! \(error)")
+        return AuthenticationStatus.none
+      }
+    }
+  }
   private func buildRequest(method: String = "POST", path: String, jsonData: Data) -> Observable<Data> {
     
     let url = baseURL.appendingPathComponent(path)

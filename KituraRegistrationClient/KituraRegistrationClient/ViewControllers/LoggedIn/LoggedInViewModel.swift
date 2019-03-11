@@ -23,6 +23,7 @@ struct LoggedInViewModel {
   init(with account: Account, navigator: Navigator) {
     emailValue.value = account.email
     self.account = account
+    self.things.value = account.things
     self.navigator = navigator
   }
   

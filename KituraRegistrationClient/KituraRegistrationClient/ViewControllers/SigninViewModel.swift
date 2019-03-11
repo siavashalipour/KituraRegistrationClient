@@ -1,18 +1,17 @@
 //
-//  AccountViewModel.swift
+//  SigninViewModel.swift
 //  KituraRegistrationClient
 //
-//  Created by Siavash on 5/1/18.
-//  Copyright © 2018 Siavash. All rights reserved.
+//  Created by Siavash on 11/3/19.
+//  Copyright © 2019 Siavash. All rights reserved.
 //
 
+import Foundation
 import RxSwift
 import RxCocoa
 import Action
 
-typealias Codable = Decodable & Encodable
-
-struct RegistrationViewModel {
+struct SigninViewModel {
   
   // input
   let emailValid: Driver<Bool>
@@ -34,23 +33,23 @@ struct RegistrationViewModel {
     email.drive(emailVariable).disposed(by: bag)
     password.drive(passwordVariable).disposed(by: bag)
     self.navigator = navigator
-
+    
   }
-  func onRegister(input: UIViewController) -> CocoaAction {
-    return CocoaAction { _ in
-      return AccountService.shared.register(with: self.emailVariable.value, password: self.passwordVariable.value).flatMap { status -> Observable<Void> in
-        switch status {
-        case .none, .error(_):
-          // TODO: Show Error
-          break
-        case .authorise(let account):
+  
+  func onLogin(input: UIViewController) -> CocoaAction {
+    return Action { _ in
+      AccountService.shared.login(email: self.emailVariable.value, password: self.passwordVariable.value).flatMap { response -> Observable<Void> in
+        switch response {
+        case .authorise(let acc):
+          let vm = LoggedInViewModel.init(with: acc, navigator: self.navigator)
           DispatchQueue.main.async {
-            self.navigator.show(segue: .loggedIn(LoggedInViewModel(with: account, navigator: self.navigator)), sender: input)
+            self.navigator.show(segue: .loggedIn(vm), sender: input)
           }
+        case .none,.error(_):
+          break // handle error
         }
         return Observable.just(())
       }
     }
   }
 }
-

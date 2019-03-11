@@ -17,6 +17,7 @@ class RegistrationViewController: UIViewController {
   @IBOutlet weak var emailField: UITextField!
   @IBOutlet weak var pwdField: UITextField!
   @IBOutlet weak var registerBtn: UIButton!
+  @IBOutlet weak var alreadyHaveAccountButton: UIButton!
   
   private var navigator: Navigator!
   private var viewModel: RegistrationViewModel!
@@ -63,6 +64,7 @@ class RegistrationViewController: UIViewController {
     
     viewModel.credintialValid.drive(registerBtn.rx.isEnabled).disposed(by: bag)
     registerBtn.rx.action = viewModel.onRegister(input: self)
+    alreadyHaveAccountButton.rx.action = viewModel.onAlreadyHaveAnAccount(input: self)
   }
   private func setupUI() {
     registerBtn.setBackgroundImage(UIImage.from(color: .lightGray), for: .disabled)
