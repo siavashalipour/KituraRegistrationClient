@@ -22,12 +22,24 @@
 		7C56B58A223217EA00038399 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C56B589223217EA00038399 /* Constants.swift */; };
 		7C56B6C42235CD4200038399 /* SigninViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C56B6C32235CD4200038399 /* SigninViewController.swift */; };
 		7C56B6C62235CD4900038399 /* SigninViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C56B6C52235CD4900038399 /* SigninViewModel.swift */; };
+		7CBD6DD322701841008165DE /* KituraRegistrationClientTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CBD6DD222701841008165DE /* KituraRegistrationClientTests.swift */; };
 		7CC756CA2230CFEB00E7DA79 /* LoggedInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CC756C92230CFEB00E7DA79 /* LoggedInViewController.swift */; };
 		7CC756CC2230D30300E7DA79 /* UIImage+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CC756CB2230D30200E7DA79 /* UIImage+.swift */; };
 		7CC756CE2230D80B00E7DA79 /* Navigator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CC756CD2230D80B00E7DA79 /* Navigator.swift */; };
 		7CC756D02230D86F00E7DA79 /* Storyboard+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CC756CF2230D86F00E7DA79 /* Storyboard+.swift */; };
 		7CC756D22230DCE900E7DA79 /* LoggedInViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CC756D12230DCE900E7DA79 /* LoggedInViewModel.swift */; };
+		D17E48C03FD9B2B87488C485 /* Pods_KituraRegistrationClientTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D5C07AF22259F2041DDEDA65 /* Pods_KituraRegistrationClientTests.framework */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		7CBD6DD522701841008165DE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7C2322DA1FFEEC9500382A90 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7C2322E11FFEEC9500382A90;
+			remoteInfo = KituraRegistrationClient;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		7C07B5062230CC9D00594F72 /* Validator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Validator.swift; sourceTree = "<group>"; };
@@ -46,13 +58,21 @@
 		7C56B589223217EA00038399 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		7C56B6C32235CD4200038399 /* SigninViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SigninViewController.swift; sourceTree = "<group>"; };
 		7C56B6C52235CD4900038399 /* SigninViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SigninViewModel.swift; sourceTree = "<group>"; };
+		7CBD6DAF226FECE6008165DE /* KituraRegistrationClientTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KituraRegistrationClientTests.swift; sourceTree = "<group>"; };
+		7CBD6DB1226FECE6008165DE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7CBD6DD022701840008165DE /* KituraRegistrationClientTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KituraRegistrationClientTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		7CBD6DD222701841008165DE /* KituraRegistrationClientTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KituraRegistrationClientTests.swift; sourceTree = "<group>"; };
+		7CBD6DD422701841008165DE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7CC756C92230CFEB00E7DA79 /* LoggedInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoggedInViewController.swift; sourceTree = "<group>"; };
 		7CC756CB2230D30200E7DA79 /* UIImage+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+.swift"; sourceTree = "<group>"; };
 		7CC756CD2230D80B00E7DA79 /* Navigator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Navigator.swift; sourceTree = "<group>"; };
 		7CC756CF2230D86F00E7DA79 /* Storyboard+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Storyboard+.swift"; sourceTree = "<group>"; };
 		7CC756D12230DCE900E7DA79 /* LoggedInViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoggedInViewModel.swift; sourceTree = "<group>"; };
+		8F1BDC5D44F8E94D03C3B267 /* Pods-KituraRegistrationClientTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KituraRegistrationClientTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-KituraRegistrationClientTests/Pods-KituraRegistrationClientTests.release.xcconfig"; sourceTree = "<group>"; };
 		AD0FF9D6D8B09B2F0FC9B243 /* Pods_KituraRegistrationClient.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_KituraRegistrationClient.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BBD757571BD6F662DB1A1AB7 /* Pods-KituraRegistrationClient.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KituraRegistrationClient.release.xcconfig"; path = "Pods/Target Support Files/Pods-KituraRegistrationClient/Pods-KituraRegistrationClient.release.xcconfig"; sourceTree = "<group>"; };
+		CACE1CF1B19DFD3269AD4CC1 /* Pods-KituraRegistrationClientTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KituraRegistrationClientTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-KituraRegistrationClientTests/Pods-KituraRegistrationClientTests.debug.xcconfig"; sourceTree = "<group>"; };
+		D5C07AF22259F2041DDEDA65 /* Pods_KituraRegistrationClientTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_KituraRegistrationClientTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DBEA47864D1075DC2333BE7D /* Pods-KituraRegistrationClient.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KituraRegistrationClient.debug.xcconfig"; path = "Pods/Target Support Files/Pods-KituraRegistrationClient/Pods-KituraRegistrationClient.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -65,6 +85,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		7CBD6DCD22701840008165DE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D17E48C03FD9B2B87488C485 /* Pods_KituraRegistrationClientTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -73,6 +101,8 @@
 			children = (
 				DBEA47864D1075DC2333BE7D /* Pods-KituraRegistrationClient.debug.xcconfig */,
 				BBD757571BD6F662DB1A1AB7 /* Pods-KituraRegistrationClient.release.xcconfig */,
+				CACE1CF1B19DFD3269AD4CC1 /* Pods-KituraRegistrationClientTests.debug.xcconfig */,
+				8F1BDC5D44F8E94D03C3B267 /* Pods-KituraRegistrationClientTests.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -81,6 +111,8 @@
 			isa = PBXGroup;
 			children = (
 				7C2322E41FFEEC9500382A90 /* KituraRegistrationClient */,
+				7CBD6DAE226FECE6008165DE /* KituraRegistrationClientTests */,
+				7CBD6DD122701841008165DE /* KituraRegistrationClientTests */,
 				7C2322E31FFEEC9500382A90 /* Products */,
 				03A4EC663EF83A3BA76CA360 /* Pods */,
 				C0D414DE9C2AB2FAC5B56D81 /* Frameworks */,
@@ -91,6 +123,7 @@
 			isa = PBXGroup;
 			children = (
 				7C2322E21FFEEC9500382A90 /* KituraRegistrationClient.app */,
+				7CBD6DD022701840008165DE /* KituraRegistrationClientTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -120,8 +153,7 @@
 			children = (
 				7C56B6C12235CCF800038399 /* Registration */,
 				7C56B6C22235CD0500038399 /* LoggedIn */,
-				7C56B6C32235CD4200038399 /* SigninViewController.swift */,
-				7C56B6C52235CD4900038399 /* SigninViewModel.swift */,
+				7CBD6DB7226FED04008165DE /* SignIn */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -170,6 +202,33 @@
 			path = LoggedIn;
 			sourceTree = "<group>";
 		};
+		7CBD6DAE226FECE6008165DE /* KituraRegistrationClientTests */ = {
+			isa = PBXGroup;
+			children = (
+				7CBD6DAF226FECE6008165DE /* KituraRegistrationClientTests.swift */,
+				7CBD6DB1226FECE6008165DE /* Info.plist */,
+			);
+			path = KituraRegistrationClientTests;
+			sourceTree = "<group>";
+		};
+		7CBD6DB7226FED04008165DE /* SignIn */ = {
+			isa = PBXGroup;
+			children = (
+				7C56B6C32235CD4200038399 /* SigninViewController.swift */,
+				7C56B6C52235CD4900038399 /* SigninViewModel.swift */,
+			);
+			name = SignIn;
+			sourceTree = "<group>";
+		};
+		7CBD6DD122701841008165DE /* KituraRegistrationClientTests */ = {
+			isa = PBXGroup;
+			children = (
+				7CBD6DD222701841008165DE /* KituraRegistrationClientTests.swift */,
+				7CBD6DD422701841008165DE /* Info.plist */,
+			);
+			path = KituraRegistrationClientTests;
+			sourceTree = "<group>";
+		};
 		7CC756C82230CFD200E7DA79 /* Scene */ = {
 			isa = PBXGroup;
 			children = (
@@ -182,6 +241,7 @@
 			isa = PBXGroup;
 			children = (
 				AD0FF9D6D8B09B2F0FC9B243 /* Pods_KituraRegistrationClient.framework */,
+				D5C07AF22259F2041DDEDA65 /* Pods_KituraRegistrationClientTests.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -208,19 +268,44 @@
 			productReference = 7C2322E21FFEEC9500382A90 /* KituraRegistrationClient.app */;
 			productType = "com.apple.product-type.application";
 		};
+		7CBD6DCF22701840008165DE /* KituraRegistrationClientTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7CBD6DD722701841008165DE /* Build configuration list for PBXNativeTarget "KituraRegistrationClientTests" */;
+			buildPhases = (
+				8C767AA4A37BAAFD4759D534 /* [CP] Check Pods Manifest.lock */,
+				7CBD6DCC22701840008165DE /* Sources */,
+				7CBD6DCD22701840008165DE /* Frameworks */,
+				7CBD6DCE22701840008165DE /* Resources */,
+				29453FA8E95F30ED982F5571 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7CBD6DD622701841008165DE /* PBXTargetDependency */,
+			);
+			name = KituraRegistrationClientTests;
+			productName = KituraRegistrationClientTests;
+			productReference = 7CBD6DD022701840008165DE /* KituraRegistrationClientTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
 		7C2322DA1FFEEC9500382A90 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 0920;
+				LastSwiftUpdateCheck = 1000;
 				LastUpgradeCheck = 0920;
 				ORGANIZATIONNAME = Siavash;
 				TargetAttributes = {
 					7C2322E11FFEEC9500382A90 = {
 						CreatedOnToolsVersion = 9.2;
 						ProvisioningStyle = Automatic;
+					};
+					7CBD6DCF22701840008165DE = {
+						CreatedOnToolsVersion = 10.0;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 7C2322E11FFEEC9500382A90;
 					};
 				};
 			};
@@ -238,6 +323,7 @@
 			projectRoot = "";
 			targets = (
 				7C2322E11FFEEC9500382A90 /* KituraRegistrationClient */,
+				7CBD6DCF22701840008165DE /* KituraRegistrationClientTests */,
 			);
 		};
 /* End PBXProject section */
@@ -250,6 +336,13 @@
 				7C2322F01FFEEC9500382A90 /* LaunchScreen.storyboard in Resources */,
 				7C2322ED1FFEEC9500382A90 /* Assets.xcassets in Resources */,
 				7C2322EB1FFEEC9500382A90 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7CBD6DCE22701840008165DE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -272,6 +365,34 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		29453FA8E95F30ED982F5571 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-KituraRegistrationClientTests/Pods-KituraRegistrationClientTests-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/RxCocoa/RxCocoa.framework",
+				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/RxBlocking/RxBlocking.framework",
+				"${BUILT_PRODUCTS_DIR}/RxTest/RxTest.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxCocoa.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxBlocking.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxTest.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-KituraRegistrationClientTests/Pods-KituraRegistrationClientTests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		84CE406BC731B20C679837B5 /* [CP] Embed Pods Frameworks */ = {
@@ -304,6 +425,28 @@
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-KituraRegistrationClient/Pods-KituraRegistrationClient-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
+		8C767AA4A37BAAFD4759D534 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-KituraRegistrationClientTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -330,7 +473,23 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		7CBD6DCC22701840008165DE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7CBD6DD322701841008165DE /* KituraRegistrationClientTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		7CBD6DD622701841008165DE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7C2322E11FFEEC9500382A90 /* KituraRegistrationClient */;
+			targetProxy = 7CBD6DD522701841008165DE /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		7C2322E91FFEEC9500382A90 /* Main.storyboard */ = {
@@ -469,7 +628,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.siavash.KituraRegistrationClient;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -484,8 +643,53 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.siavash.KituraRegistrationClient;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		7CBD6DD822701841008165DE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CACE1CF1B19DFD3269AD4CC1 /* Pods-KituraRegistrationClientTests.debug.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = N22FPH76FU;
+				INFOPLIST_FILE = KituraRegistrationClientTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = com.MaxwellForest.asahi.SafedomeQA.KituraRegistrationClientTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/KituraRegistrationClient.app/KituraRegistrationClient";
+			};
+			name = Debug;
+		};
+		7CBD6DD922701841008165DE /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8F1BDC5D44F8E94D03C3B267 /* Pods-KituraRegistrationClientTests.release.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = N22FPH76FU;
+				INFOPLIST_FILE = KituraRegistrationClientTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = com.MaxwellForest.asahi.SafedomeQA.KituraRegistrationClientTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/KituraRegistrationClient.app/KituraRegistrationClient";
 			};
 			name = Release;
 		};
@@ -506,6 +710,15 @@
 			buildConfigurations = (
 				7C2322F51FFEEC9500382A90 /* Debug */,
 				7C2322F61FFEEC9500382A90 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7CBD6DD722701841008165DE /* Build configuration list for PBXNativeTarget "KituraRegistrationClientTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7CBD6DD822701841008165DE /* Debug */,
+				7CBD6DD922701841008165DE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

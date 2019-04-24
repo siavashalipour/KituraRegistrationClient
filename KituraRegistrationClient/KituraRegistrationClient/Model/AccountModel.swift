@@ -8,6 +8,8 @@
 
 import Foundation
 
+typealias Codable = Decodable & Encodable
+
 struct Account: Codable {
   
   let email: String

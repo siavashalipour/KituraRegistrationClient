@@ -1,0 +1,6 @@
+framework module Pods_KituraRegistrationClientTests {
+  umbrella header "Pods-KituraRegistrationClientTests-umbrella.h"
+
+  export *
+  module * { export * }
+}

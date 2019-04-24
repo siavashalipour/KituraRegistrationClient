@@ -10,8 +10,6 @@ import RxSwift
 import RxCocoa
 import Action
 
-typealias Codable = Decodable & Encodable
-
 struct RegistrationViewModel {
   
   // input

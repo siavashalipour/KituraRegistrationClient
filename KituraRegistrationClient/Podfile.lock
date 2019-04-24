@@ -1,45 +1,55 @@
 PODS:
-  - Action (3.10.2):
+  - Action (3.11.0):
     - RxCocoa (~> 4.0)
     - RxSwift (~> 4.0)
-  - RxCocoa (4.1.0):
-    - RxSwift (~> 4.0)
-  - RxGesture (1.2.1):
-    - RxCocoa (~> 4.0)
-    - RxSwift (~> 4.0)
-  - RxSwift (4.1.0)
+  - RxBlocking (4.5.0):
+    - RxSwift (>= 4.4.2, ~> 4.4)
+  - RxCocoa (4.5.0):
+    - RxSwift (>= 4.4.2, ~> 4.4)
+  - RxGesture (2.2.0):
+    - RxCocoa (~> 4.5)
+    - RxSwift (~> 4.5)
+  - RxSwift (4.5.0)
+  - RxTest (4.5.0):
+    - RxSwift (>= 4.4.2, ~> 4.4)
   - SnapKit (4.2.0)
   - SwiftyJSON (4.0.0)
   - Then (2.4.0)
 
 DEPENDENCIES:
   - Action
+  - RxBlocking
   - RxCocoa
   - RxGesture
-  - RxSwift (~> 4.1.0)
+  - RxSwift
+  - RxTest
   - SnapKit
-  - SwiftyJSON
+  - SwiftyJSON (= 4.0.0)
   - Then
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
     - Action
+    - RxBlocking
     - RxCocoa
     - RxGesture
     - RxSwift
+    - RxTest
     - SnapKit
     - SwiftyJSON
     - Then
 
 SPEC CHECKSUMS:
-  Action: 01521505cc86ccabbb90fc955296e1f74039968e
-  RxCocoa: cc1fec49cdc8fabe645964de7c51c099a36c2aa8
-  RxGesture: c278eb05b187abd47e11e65464ae4de53ab71d95
-  RxSwift: 4219941c1244c88002901bd87a69d3aea9ae71f0
+  Action: 689181e4c3f6566844178d8a7da6fef39a9597fc
+  RxBlocking: 79413e4d916f44bb3e113c5b2cc059e36fe58910
+  RxCocoa: cbf70265dc65a981d4ac982e513c10cf23df24a0
+  RxGesture: c1b7bf17166b0ef9d642a9510f8bac5785f18990
+  RxSwift: f172070dfd1a93d70a9ab97a5a01166206e1c575
+  RxTest: 3ccb66bfbace0bf7df1c43a7c75d046f8ce60372
   SnapKit: fe8a619752f3f27075cc9a90244d75c6c3f27e2a
   SwiftyJSON: 070dabdcb1beb81b247c65ffa3a79dbbfb3b48aa
   Then: 71866660c7af35a7343831f7668e7cd2b62ee0f2
 
-PODFILE CHECKSUM: f831ca329c9e8b7edf4ef1fae6ea7a8d50b482c7
+PODFILE CHECKSUM: 93854ab9c4ab51926fce6fdf6578f63f06c2e4be
 
 COCOAPODS: 1.6.0.beta.1
